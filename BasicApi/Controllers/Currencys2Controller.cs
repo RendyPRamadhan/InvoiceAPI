@@ -12,20 +12,20 @@ namespace InvoiceAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CurrencysController : ControllerBase
+    public class Currencys2Controller : ControllerBase
     {
-        private ICurrencyService _oCurrencyService;
+        private Icurrency2Service _oicurrency2Service;
 
-        public CurrencysController(ICurrencyService oCurrencyService)
+        public Currencys2Controller(Icurrency2Service oicurrency2Service)
         {
-            _oCurrencyService = oCurrencyService;
+            _oicurrency2Service = oicurrency2Service;
         }
 
-        // GET: api/<Controller>
+        // GET: api/<InvoicesController>
         [HttpGet]
         public async Task<IEnumerable<Currency>> GetAllCurrency()
         {
-            return await _oCurrencyService.GetCurrencys();
+            return await _oicurrency2Service.GetAll();
         }
     }
 }

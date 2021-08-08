@@ -1,6 +1,6 @@
 using System;
 
-namespace BasicApi
+namespace InvoiceAPI
 {
     public class WeatherForecast
     {
