@@ -9,7 +9,7 @@ using Microsoft.Extensions.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 
-namespace InvoiceAPI.Repository
+namespace InvoiceAPI.Service
 {
     public class CurrencyService : ICurrencyService
     {

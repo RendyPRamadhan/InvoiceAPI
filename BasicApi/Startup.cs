@@ -13,7 +13,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace BasicApi
+namespace InvoiceAPI
 {
     public class Startup
     {
@@ -29,6 +29,10 @@ namespace BasicApi
         {
             services.AddControllers();
             services.AddScoped<IInvoiceService, InvoiceService>();
+            services.AddScoped<Icurrency2Service, Currency2Service>();
+            services.AddScoped<ICurrencyService, CurrencyService>();
+            services.AddScoped<IUOMService, UOMService>();
+            services.AddScoped<IInvoice_DetailService, Invoice_DetailService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

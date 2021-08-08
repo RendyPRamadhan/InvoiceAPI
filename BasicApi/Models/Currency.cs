@@ -7,9 +7,9 @@ namespace InvoiceAPI.Models
 {
     public class Currency
     {
-        public int currency_id { get; set; }
-        public string currency { get; set; }
-        public string curr_desc { get; set; }
+        public int currency_id { get; set; } = 0;
+        public string currency { get; set; } = "";
+        public string curr_desc { get; set; } = "";
         public string Message { get; set; } = "";
     }
 }

@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using InvoiceAPI.Models;
 
+
+using InvoiceAPI.Models;
 namespace InvoiceAPI.IService
 {
-   public interface ICurrencyService
+    public interface Icurrency2Service
     {
-        Task<List<Currency>> GetCurrencys();
+        Task<List<Currency>> GetAll();
     }
 }
